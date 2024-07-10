@@ -50,7 +50,7 @@ module.exports = {
             if(refresh == receivedRefresh) { 
                 try{
                     const refreshResult = jwt.verify(receivedRefresh,process.env.REFRESH_SECRET);
-                    console.log("refreshresult", refreshResult);
+                    // console.log("refreshresult", refreshResult);
                     return {
                         ok : true
                     }

@@ -32,6 +32,7 @@ const login = async (userInfo,res) => {
         const values = [email];
         const result = await loginUser(sql,values,res);
         const user = result[0];
+        console.log(user)
 
         if (user) {
             const getHashPwd = crypto.pbkdf2Sync(password, user.salt, 100000, 64, 'sha512').toString('base64');
