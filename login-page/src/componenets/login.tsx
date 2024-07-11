@@ -34,6 +34,10 @@ const LoginBox = () => {
 
     return(
         <div>
+            <h1>Login</h1>
+            <div>
+                <a href="/">Home</a>
+            </div>
             <form>
                 <label>Username</label>
                 <input onChange={getEmail} type="email" name="email"></input>
